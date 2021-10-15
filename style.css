@@ -48,7 +48,6 @@
     background-image: url(./images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
     background-size: cover;
 }
-
 .name{
     position:absolute;
     justify-content: center;
@@ -59,6 +58,32 @@
     line-height:3.5rem;
  
 }
+.name {
+    padding:10px 20px;
+    background:black;
+    font-size:35px;
+    font-family:monospace;
+    border-radius:50px;
+  }
+  .name p{
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 4s steps(22,end) forwards,
+              blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #222;
+    }
+  }
 .left{
     position: relative;
 }
@@ -69,35 +94,7 @@
     width:30vw;
     left:10vw;
     top: -25vh;
-
 }
-
-.outerani{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.outerani ul{
-    list-style-type: none;
-    font-size: 40px;
-    font-weight:400;
-    color: #fc6d6d;
-}
-.outerani span{
-    position:relative;
-}
-.outerani li span:after{
-    content:"";
-    position:absolute;
-    left:0;
-    height: 100%;
-    width:100%;
-    border-left: 2px solid #fc6d6d;
-    animation: typing 1.5s steps(10) infinite;
-}
-
 .aboutme{
     height:35vh;
     background-color: lavenderblush;
@@ -155,6 +152,7 @@ font-size: 1.2rem;
     justify-content: center;
 align-items: center;
 }
+
 .Skillshead{
     font-size: 3rem;
 }
