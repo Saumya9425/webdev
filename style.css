@@ -99,7 +99,7 @@
 }
 
 .aboutme{
-    height:30vh;
+    height:35vh;
     background-color: lavenderblush;
 }
 .aboutme p{
@@ -155,7 +155,32 @@ font-size: 1.2rem;
     justify-content: center;
 align-items: center;
 }
-.SkillsHead{
-    position:absolute;
-    top:5%;
+.Skillshead{
+    font-size: 3rem;
+}
+@media only screen and (max-width: 500px){
+    .aboutme p{
+        font-size: 0.8rem;
+    }
+    .Skills{
+        flex-direction: column;
+        height:80vh;
+    }
+    .nav{
+        align-items: center;
+    }
+       
+    
+}
+@media only screen and (max-width:360px)
+{
+    .aboutme p{
+        font-size: 0.5rem;
+        line-height:1rem;
+    }
+    .contacts .fab{
+        font-size: 1rem;
+        
+    }
+
 }
