@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.navbar{
+    display: flex;
+    position:fixed;
+    z-index: 1000;
+    width:100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+        white-space: nowrap;
+        height:10vh;
+}
+.nav li {
+    display: inline-flex;
+    padding:1.2rem;
+    font-size: 16px
+}
+.nav li:hover{
+    background-color: grey;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+  
+}
+#home{
+    position: relative;
+    font-size: 30;
+    color:black;
+    text-align: center;
+    height: 100vh;
+    width:100%;
+    background-color: rgb(35,35,35);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+    background-size: cover;
+}
+
+.name{
+    position:absolute;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    left:30vw;
+    font-size: 2.8rem;
+    line-height:3.5rem;
+ 
+}
+.left{
+    position: relative;
+}
+.left .gif{
+    position:absolute;
+    border-radius: 20%;
+    height:30vw;
+    width:30vw;
+    left:10vw;
+    top: -25vh;
+
+}
+
+.outerani{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.outerani ul{
+    list-style-type: none;
+    font-size: 40px;
+    font-weight:400;
+    color: #fc6d6d;
+}
+.outerani span{
+    position:relative;
+}
+.outerani li span:after{
+    content:"";
+    position:absolute;
+    left:0;
+    height: 100%;
+    width:100%;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+.aboutme{
+    height:30vh;
+    background-color: lavenderblush;
+}
+.aboutme p{
+    line-height:1.8rem;
+    margin:1%;
+text-align: center;
+font-size: 1.2rem;
+}
+.about{
+    text-align: center;  
+
+    
+}
+.skillshead{
+    display: flex;
+    justify-content: center;
+}
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25rem;
+    position:relative;
+   
+}
+.image{
+   width:20%;
+   height:50%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.contacts{
+    background-color: black;
+    height:10vh;
+    display:flex;
+    flex:wrap;
+    justify-content: space-around; 
+    text-align: center;
+     align-items: center;
+     color:white;
+}
+.contacts a{
+    top:1%;
+    color: white;
+
+}
+.contacts .fab{
+    display: inline-flex;
+    flex-wrap:wrap;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: center;
+align-items: center;
+}
+.SkillsHead{
+    position:absolute;
+    top:5%;
+}
